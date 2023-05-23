@@ -21,8 +21,8 @@ public class Main {
                 .build();
 
 
-        Map<String, String> sharedData = SharedData.getSharedData("keyOne","valueOne");
-        Map<String, String> sharedDataAnother = SharedData.getSharedData("keyTwo","valueTwo");
-        System.out.println(sharedData + " " + sharedDataAnother);
+        SharedData sharedData = SharedData.getSharedData();
+        SharedData sharedDataAnother = SharedData.getSharedData();
+        System.out.println(sharedData == sharedDataAnother);
     }
 }
